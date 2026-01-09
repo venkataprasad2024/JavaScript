@@ -1,0 +1,10 @@
+ <%- include("includes/header.ejs");%>
+<body>
+  <h1>Roll the Dice
+    <%= dicenum %></h1>
+    <% if (dicenum == 6) { %>
+      <h1> - You hit the jackpot! roll again!</h1>
+    <% } %>
+
+</body>
+</html>
