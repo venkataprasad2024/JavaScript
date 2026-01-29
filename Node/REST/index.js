@@ -45,7 +45,7 @@ app.post('/posts',(req,res)=>{
 let {username,content}=req.body;
 let newId=uuid();
   req.body.id=newId;
-  arr.push(req.body)
+  arr.push(req.body);
 })
 
 app.patch('/posts/:id',(req,res)=>{
