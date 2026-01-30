@@ -51,7 +51,7 @@ let newId=uuid();
 app.patch('/posts/:id',(req,res)=>{
   let {id}=req.params;
     const post=arr.find((p)=>p.id===id);
-  let newContent=req.body.content;
+  let newContent=req.body.content
  post.content=newContent;
   console.log(post);
   res.send("Patch request working");
