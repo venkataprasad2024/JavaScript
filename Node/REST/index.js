@@ -24,10 +24,10 @@ const port=8080;
 app.listen(port,()=>{
   console.log(`Server is running on port ${port}`);
 })
-app.post('/login',(req,res)=>{
-  console.log(req.body);
-  res.send("login successful");
-})
+// app.post('/login',(req,res)=>{
+//   console.log(req.body);
+//   res.send("login successful");
+// })
 app.get('/',(req,res)=>{
   res.render("login");
 })
