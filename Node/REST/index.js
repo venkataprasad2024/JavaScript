@@ -57,8 +57,8 @@ app.patch('/posts/:id',(req,res)=>{
   res.send("Patch request working");
 })
 
-// app.get('/posts/:id/edit',(req,res)=>{
-//   let {id}=req.params;
+app.get('/posts/:id/edit',(req,res)=>{
+  let {id}=req.params;
   
-//   res.redirect('/posts');
-// });
+  res.redirect('/posts');
+});
