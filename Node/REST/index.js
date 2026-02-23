@@ -48,14 +48,14 @@ let newId=uuid();
   arr.push(req.body);
 })
 
-// app.patch('/posts/:id',(req,res)=>{
-//   let {id}=req.params;
-//     const post=arr.find((p)=>p.id===id);
-//   let newContent=req.body.content;
-//  post.content=newContent;
-//   console.log(post);
-//   res.send("Patch request working");
-// })
+app.patch('/posts/:id',(req,res)=>{
+  let {id}=req.params;
+    const post=arr.find((p)=>p.id===id);
+  let newContent=req.body.content;
+ post.content=newContent;
+  console.log(post);
+  res.send("Patch request working");
+})
 
 app.get('/posts/:id/edit',(req,res)=>{
   let {id}=req.params;
